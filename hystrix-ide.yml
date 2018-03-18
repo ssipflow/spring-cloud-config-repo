@@ -4,9 +4,8 @@ spring:
   application:
     name: HYSTRIX
 turbine:
-  aggregator:
-    clusterConfig: DEFAULT
   appConfig: USER-SERVICE,CLIENT-SERVICE
+  clusterNameExpression: "'default'"
 eureka:
   client:
     registerWithEureka: true

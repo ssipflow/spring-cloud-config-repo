@@ -18,13 +18,16 @@ zuul:
     client:
       path: /client/**
       serviceId: CLIENT-SERVICE
+      stripPrefix: false
     user:
       path: /user/**
       serviceId: USER-SERVICE
+      stripPrefix: false
     oauth:
       path: /oauth/**
       sensitiveHeaders:
       serviceId: OAUTH-SERVICE
+      stripPrefix: false
 eureka:
   client:
     registerWithEureka: true

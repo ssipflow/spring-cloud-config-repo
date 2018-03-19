@@ -39,4 +39,8 @@ eureka:
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
-management.endpoints.web.exposure.include=*
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

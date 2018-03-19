@@ -14,9 +14,6 @@ spring:
     sampler:
       percentage: 0.2
 zuul:
-  debug:
-    include-debug-header: true
-    request: true
   routes:
     client:
       path: /client/**

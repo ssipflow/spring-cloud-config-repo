@@ -2,7 +2,7 @@ server:
   port: 8280
 spring:
   application:
-    name: OAUTH-SERVICE
+    name: oauth-service
   zipkin:
     baseUrl: http://zipkin.development.svc.cluster.local:9411
   sleuth:

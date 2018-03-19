@@ -1,8 +1,11 @@
 server:
   port: 8180
+  
 management:
   endpoints:
-    enabledByDefault: true
+    web:
+      exposure:
+        include: *
 spring:
   application:
     name: CLIENT-SERVICE

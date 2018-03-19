@@ -24,7 +24,7 @@ zuul:
     oauth:
       path: /oauth/**
       sensitiveHeaders:
-      serviceId: OAUTH-SERVICE
+      serviceId: oauth-service
 eureka:
   client:
     registerWithEureka: true

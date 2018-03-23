@@ -20,12 +20,15 @@ zuul:
   routes:
     client:
       path: /client/**
+      stripPrefix: false
       serviceId: CLIENT-SERVICE
     user:
       path: /user/**
+      stripPrefix: false
       serviceId: USER-SERVICE
     oauth:
       path: /oauth/**
+      stripPrefix: false
       serviceId: OAUTH-SERVICE
 eureka:
   client:

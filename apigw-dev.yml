@@ -29,6 +29,7 @@ zuul:
     oauth:
       path: /oauth/**
       stripPrefix: false
+      sensitiveHeaders:
       serviceId: OAUTH-SERVICE
 eureka:
   client:
